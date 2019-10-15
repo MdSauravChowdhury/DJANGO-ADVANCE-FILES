@@ -1,0 +1,26 @@
+1 # first step install django-allauth libary
+
+2 # second setup and add allauth your project 
+
+3 # then follow the step:
+
+4 # Go to your settings.py file
+add this 
+
+#DJANGO MAIL BACKEND
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# EMAIL PASSWORD  SMTP
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'yourmail@gmail.com'
+DEFAULT_FROM_EMAIL = 'yourmail@gmail.com'
+SERVER_EMAIL= 'yourmail@gmail.com'
+EMAIL_HOST_PASSWORD = 'your-password'
+EMAIL_PORT = 587
+
+5 # last step allow gmail access permison press on button
+https://myaccount.google.com/lesssecureapps?pli=1
+
+6 # last setup It's optional style pack
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
